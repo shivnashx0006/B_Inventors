@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Poppins", sans-serif;
     background-color: #000;
     display: flex;
@@ -12,9 +12,9 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .error-container {
+}
+
+.error-container {
     text-align: center;
     max-width: 800px;
     padding: 60px;
@@ -22,19 +22,40 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-  }
-  
-  .error-code {
+}
+
+.error-code {
     font-size: 150px;
     font-weight: 700;
     color: #ffd60a;
     margin-bottom: 30px;
-  }
-  
-  .error-message {
+}
+
+.error-message {
     font-size: 36px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 40px;
-  }
+}
+
+/* Optional: Add some hover effect for the error container */
+.error-container:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Media query for responsiveness */
+@media (max-width: 600px) {
+    .error-code {
+        font-size: 100px;
+    }
+
+    .error-message {
+        font-size: 24px;
+    }
+
+    .error-container {
+        padding: 40px;
+    }
+}
   
